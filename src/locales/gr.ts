@@ -68,7 +68,10 @@ export const translations: Translations = {
     'noResources': 'Δεν έχετε λάβει κανέναν πόρο ακόμα',
     'noChildren': 'Δεν βρέθηκαν CA-παιδιά.',
     'addRoa': 'Προσθήκη ROA',
+    'addAspa': 'Προσθήκη ASPA',
+    'editAspa': 'Επεξεργασία ASPA',
     'roas': 'ROA',
+    'aspas': 'ASPA',
     'resources': 'Πόροι',
     'parents': 'CA-γονείς',
     'repo': 'Αποθετήριο (repository)',
@@ -159,6 +162,23 @@ export const translations: Translations = {
     'parentCertificate': 'Πιστοποιητικό CA-γονέα',
     'published': 'Δημοσιευμένο'
   },
+  'aspas': {
+    'customer': "Πελάτης",
+    'providers': "Πάροχοι",
+    'search': "Αναζήτηση για πελάτη, πάροχο...",
+    'confirmation': {
+      'title': 'Προειδοποίηση',
+      'message':
+        "Η ASPA '{customer} => {providers}' θα αφαιρεθεί. Συνέχεια;",
+      'added': 'Η ASPA προστέθηκε',
+      'retired': 'Η ASPA αφαιρέθηκε',
+      'retiredSuccess': 'Η ASPA αφαιρέθηκε',
+      'addedSuccess': 'Η ASPA προστέθηκε',
+      'commentUpdatedSuccess': 'Το σχόλιο της ASPA ανανεώθηκε',
+    },
+    'customer_validation_format': "Το ASN του πελάτη είναι άκυρο ή ήδη υπάρχον",
+    'providers_validation_format': "Η λίστα με τα ASN των παρόχων είναι άκυρη",
+  },
   'announcements': {
     'noRoasOrAnnouncements': 'Δεν βρέθηκαν ROA ή Ανακοινώσεις.',
     'search': 'Αναζήτηση για ASN, πρόθεμα, κατάσταση...',
@@ -191,9 +211,9 @@ export const translations: Translations = {
       'announcement_invalid_length_help': 'Αυτή η ανακοίνωση δεν είναι επιτρεπτή καθώς είναι πιο συγκεκριμένη από το πρόθεμα και το μέγιστο μήκος που έχετε εξουσιοδοτήσει για αυτό το ASN',
       'announcement_invalid_asn': 'ΑΚΥΡΟ ASN',
       'announcement_invalid_asn_help': 'Αυτή η ανακοίνωση δεν είναι επιτρεπτή καθώς έχετε εξουσιοδοτήσει το πρόθεμα μόνο από άλλο ASN',
-      'announcement_disallowed': 'DISALLOWED BY AS0',
+      'announcement_disallowed': 'ΑΠAΓΟΡΕΥΕΤΑΙ ΑΠΟ AS0',
       'announcement_disallowed_help':
-        'This announcement is not allowed because you have an AS0 ROA that disallows it',
+        'Αυτή η ανακοίνωση δεν είναι επιτρεπτή καθώς ένα υπάρχον AS0 ROA την αποτρέπει',
     },
     'download': 'Λήψη CSV'
   },

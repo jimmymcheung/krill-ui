@@ -14,15 +14,15 @@ export const translations: Translations = {
     'dropOrClick': 'Sleep een bestand hierheen of <em>klik om te uploaden</em>',
     'started': 'Krill is actief sinds',
     'newversion': 'Nieuwe versie beschikbaar!',
-    'supportcontracts': 'Supportcontracten',
+    'supportcontracts': 'Ondersteuningscontracten',
     'warning': 'Waarschuwing',
     'idle': 'U bent uitgelogd wegens inactiviteit.',
     'nodata': 'Geen data',
     'copySuccess': 'De XML is naar uw klembord gekopiëerd',
     'edit': 'Edit',
-    'page': 'page',
+    'page': 'pagina',
     'userInfo': {
-      'title': 'Login Details',
+      'title': 'Logingegevens',
       'user': 'Gebruiker'
     }
   },
@@ -41,7 +41,7 @@ export const translations: Translations = {
   },
   'onboarding': {
     'welcome': 'Welkom bij Krill',
-    'welcomeHtml': 'Laten we beginnen met aanmaken van uw RPKI Certificaatautoriteit (CA). Het zal worden gebruikt om gedelegeerde RPKI te configureren met een of meerdere bovenliggende CAs, over het algemeen uw Regionaal of Nationaal Internet Register.<br><br>De naam die u kiest identificeert uw CA tijdens interacties met bovenliggende of ondergeschikte CAs. De gekozen naam wordt niet gepubliceerd in de RPKI. Kies een naam die anderen helpen om uw organisatie te identificeren. Eenmaal ingesteld kan de naam niet worden gewijzigd.',
+    'welcomeHtml': 'Laten we beginnen met aanmaken van uw RPKI Certificaatautoriteit (CA). Het zal worden gebruikt om gedelegeerde RPKI te configureren met een of meerdere bovenliggende CA\'s, over het algemeen uw Regionaal of Nationaal Internet Register.<br><br>De naam die u kiest identificeert uw CA tijdens interacties met bovenliggende of ondergeschikte CA\'s. De gekozen naam wordt niet gepubliceerd in de RPKI. Kies een naam die anderen helpen om uw organisatie te identificeren. Eenmaal ingesteld kan de naam niet worden gewijzigd.',
     'addCAForm': {
       'required': 'Dit veld is verplicht',
       'format': 'Dit is geen geldige naam voor uw CA',
@@ -56,7 +56,7 @@ export const translations: Translations = {
     'loading': 'Certificaatautoriteiten worden geladen',
     'ca': 'Certificaatautoriteit',
     'cas': 'Certificaatautoriteiten',
-    'search': 'Zoek naar CAs...',
+    'search': 'Zoek naar CA\'s...',
     'noCas': 'Er zijn op dit moment geen certificaatautoriteiten gedefinieerd.'
   },
   'caDetails': {
@@ -66,11 +66,14 @@ export const translations: Translations = {
     'download': 'Download PEM',
     'noRoas': 'Geen ROAs gevonden.',
     'noResources': 'U heeft nog geen resources ontvangen',
-    'noChildren': 'Geen ondergeschikte CAs gevonden.',
+    'noChildren': 'Geen ondergeschikte CA\'s gevonden.',
     'addRoa': 'Voeg ROA toe',
-    'roas': 'ROAs',
+    'addAspa': 'Voeg ASPA toe',
+    'editAspa': 'Pas ASPA aan',
+    'roas': 'ROA\'s',
+    'aspas': 'ASPA\'s',
     'resources': 'Resources',
-    'parents': 'Bovenliggende CAs',
+    'parents': 'Bovenliggende CA\'s',
     'repo': 'Databank (repository)',
     'type': 'Type',
     'properties': 'Eigenschappen',
@@ -117,8 +120,8 @@ export const translations: Translations = {
       'addRepo': 'Initialiseer databank (repository)',
       'addRepoSuccess': 'Databank (repository) toegevoegd'
     },
-    'analyseThis': 'Analiseer mijn ROAs',
-    'analysis': 'ROA Analyse',
+    'analyseThis': 'Analyseer mijn ROAs',
+    'analysis': 'ROA-analyse',
     'suggestions': {
       'following': 'Controleer a.u.b. de volgende voorgestelde wijzigingen in uw ROAs.',
       'readMore': 'Lees meer..',
@@ -148,16 +151,32 @@ export const translations: Translations = {
         'new': 'Nieuw'
       }
     },
-    'syncParents': 'Synchroniseer met bovenliggende CAs',
+    'syncParents': 'Synchroniseer met bovenliggende CA\'s',
     'syncRepo': 'Synchroniseer met databank (repository)',
     'lastExchange': 'Laatste uitwisseling',
     'exchangeUri': 'URI',
     'nextExchange': 'Volgende uitwisseling voor',
-    'allResources': 'Uw gecertificeerde IP en ASN addressen',
+    'allResources': 'Uw gecertificeerde ASN en IP addressen',
     'entitlements': 'Gerechtigde addressen',
     'showEntitlements': 'Laat details zien',
     'parentCertificate': 'Parent Certificate',
     'published': 'Gepubliceerd'
+  },
+  'aspas': {
+    'customer': "Klant-ASN",
+    'providers': "Aanbieder-ASNs",
+    'search': "Zoek voor klant-ASN, aanbieder-ASN...",
+    'confirmation': {
+      'title': 'Waarschuwing',
+      'message': 'Hiermee wordt de ASPA \'{customer} => {providers}\' verwijderd. Doorgaan?',
+      'added': 'ASPA toegevoegd',
+      'retired': 'ASPA verwijderd',
+      'retiredSuccess': 'De ASPA is verwijderd',
+      'addedSuccess': 'De ASPA is toegevoegd',
+      'commentUpdatedSuccess': 'ASPA commentaar is gewijzigd',
+    },
+    'customer_validation_format': "Het klant-ASN-formaat is ongeldig of de klant-ASN heeft al een ASPA",
+    'providers_validation_format': "Het aanbieders-ASN-formaat is ongeldig",
   },
   'announcements': {
     'noRoasOrAnnouncements': 'Geen ROAs of BGP-aankondigingen gevonden.',

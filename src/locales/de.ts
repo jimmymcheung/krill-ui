@@ -68,7 +68,10 @@ export const translations: Translations = {
     'noResources': 'Sie haben noch keine Ressourcen erhalten',
     'noChildren': 'Keine untergeordneten Zertifizierungsstellen gefunden.',
     'addRoa': 'ROA hinzufügen',
+    'addAspa': 'ASPA hinzufügen',
+    'editAspa': 'ASPA ändern',
     'roas': 'ROAs',
+    'aspas': 'ASPAs',
     'resources': 'Ressourcen',
     'parents': 'Übergeordnete CAs',
     'repo': 'Repository',
@@ -158,6 +161,23 @@ export const translations: Translations = {
     'showEntitlements': 'Zeige Details',
     'parentCertificate': 'Eltern-Zertifikat',
     'published': 'Veröffentlicht'
+  },
+  'aspas': {
+    'customer': "Customer",
+    'providers': "Providers",
+    'search': "Search for customer, provider...",
+    'confirmation': {
+      'title': 'Warning',
+      'message':
+        "This will remove the ASPA '{customer} => {providers}'. Continue?",
+      'added': 'ASPA added',
+      'retired': 'ASPA removed',
+      'retiredSuccess': 'The ASPA has been removed',
+      'addedSuccess': 'The ASPA has been added',
+      'commentUpdatedSuccess': 'The ASPA comment has been updated',
+    },
+    'customer_validation_format': "The customer format is invalid or already exists",
+    'providers_validation_format': "The providers format is invalid",
   },
   'announcements': {
     'noRoasOrAnnouncements': 'Keine ROAs oder BGP-Ankündigung gefunden.',
